@@ -1,7 +1,6 @@
 {
   "name": "atividade",
   "version": "1.0.0",
-  "description": "",
   "main": "atividade1.js",
   "scripts": {
     "test": "jest"
@@ -10,5 +9,8 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }

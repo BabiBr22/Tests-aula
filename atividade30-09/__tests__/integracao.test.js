@@ -1,18 +1,14 @@
-//Importar nossos modulos
+//importar nossos modulos
 const { addUser, getUser, deleteUser } = require('../src/users')
 const { addOrder, getOrder, deleteOrder } = require('../src/orders')
 
-//Estrutura 
-//testando funcao adicionar
-
-describe('Testando a funcao adicionar pedidos e ususarios', () => {
+//estrutura 
+//testando funcao adicionar 
+describe('Testando a funcao adicionar pedidos e usuarios', () => {
     test('adicionar pedidos e usuarios', () => {
-        const user = {
-            id: 1,
-            name: "joão"
-
-
-        }
+        const user = {id: 1, 
+                    name: "João"
+                }
         const order = {
             id: 100,
             item: "mouse",
@@ -27,7 +23,10 @@ describe('Testando a funcao adicionar pedidos e ususarios', () => {
 
         expect(findUser).toEqual(user)
         expect(findOrder).toEqual(order)
-        //verificar a integração dos dois
+        //verificar a integracao dos dois
         expect(findOrder.userId).toBe(findUser.id)
     })
+
+    
+
 })
